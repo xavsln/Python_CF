@@ -1,0 +1,29 @@
+CODE PRACTICE 5: DICTIONARIES
+
+Time for your last practice task of the Exercise! To practice what you’ve learned, complete the following steps and take screenshots after each step:
+
+1. Make a list of the months in a year, and store it as months_named.
+
+months_named = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+2. Next, make another list of numbers ranging from 1 to 12 as months_numbered.
+
+months_numbered = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+3. Use the zip() function to merge the two lists together into a dictionary called months_dict such that the values in months_named act as the keys for the dictionary. An example of a key-value pair in this dictionary would be October: 10.
+
+months_dict = dict(zip(months_named, months_numbered))
+
+4. Clear both initial lists (months_named and months_numbered) with the clear() method available to them.
+
+months_named.clear()
+months_numbered.clear()
+
+5. Print the entire dictionary onto your screen.
+
+print(months_dict)
+
+6. Finally, convert the keys of this dictionary back into another list, months_extracted, and then list them in alphabetical order.
+
+months_extracted = list(months_dict.keys())
+months_extracted.sort()

@@ -1,0 +1,32 @@
+Assume that you’ve run the following statements:
+
+>>> str1 = 'hello, '
+>>> str2 = 'how are you?'
+>>> str3 = str1 + str2
+To practice what you’ve learned, without using Python’s shell, work out on your own what the following statements would return:
+
+str3[3:]
+str3[-3:]
+str3[2:9:3]
+str3[::-2]
+str3[2:8]
+
+
+1. Make a note of your answers in a text document.
+
+str3 = 'hello, how are you?'
+
+a. str3[3:]
+This command will return 'lo, how are you?'
+
+b. str3[-3:]
+This command will return 'ou?'
+
+c. str3[2:9:3]
+This command will return 'l,o'
+
+d. str3[::-2]
+This command will return '?o r o olh'
+
+e. str3[2:8]
+This command will return 'llo, h'

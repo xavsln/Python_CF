@@ -1,0 +1,11 @@
+1. Make a list of the above lineup in the same order.
+
+vehicle_lineup = ["Fiesta", "Focus", "Mondeo", "Galaxy", "Edge", "Kuga", "Ecosport", "Puma", "Ranger"]
+
+2. Add Mustang to the end of the list.
+
+vehicle_lineup.append("Mustang")
+
+3. Next, sort the list in alphabetical order, and then display the sorted list.
+
+vehicle_lineup.sort()
