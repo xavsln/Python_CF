@@ -6,9 +6,9 @@ recipe_1 = {
 
 all_recipes = []
 
-# all_recipes.append(recipe_1)
+all_recipes.append(recipe_1)
 
-print("all_recipes: ", all_recipes)
+# print("all_recipes: ", all_recipes)
 
 recipe_2 = {
   'name': 'Coffee',
@@ -36,3 +36,9 @@ recipe_5 = {
 
 all_recipes.extend((recipe_2, recipe_3, recipe_4, recipe_5))
 print("all_recipes: ", all_recipes)
+
+print(all_recipes[0].get('ingredients'))
+print(all_recipes[1].get('ingredients'))
+print(all_recipes[2].get('ingredients'))
+print(all_recipes[3].get('ingredients'))
+print(all_recipes[4].get('ingredients'))
