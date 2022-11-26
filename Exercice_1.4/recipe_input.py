@@ -139,19 +139,7 @@ finally:
         ingredients_list.append(ele)
 
     # -- PRINTS OUT THE RECIPE DIFFICULTY LEVEL: --
-    # Determine the difficulty of the recipe
-    if (recipe["cooking_time"] < 10) and (len(recipe["recipe_ingredients"]) < 4):
-      difficulty = "Easy"
-    elif (recipe["cooking_time"] < 10) and (len(recipe["recipe_ingredients"]) >= 4):
-      difficulty = "Medium"
-    elif (recipe["cooking_time"] >= 10) and (len(recipe["recipe_ingredients"]) < 4):
-      difficulty = "Intermediate"
-    elif (recipe["cooking_time"] >= 10) and (len(recipe["recipe_ingredients"]) >= 4):
-      difficulty = "Hard"
-    else:
-      print("Something bad happened, please try again")
-    
-    print("Difficulty level: ", difficulty)
+    calc_difficulty(recipe["cooking_time"], recipe["recipe_ingredients"])
 
   # -- PRINTS OUT ALL THE INGREDIENTS ACCROSS ALL RECIPES (SORTED IN ALPHABETICAL ORDER): --
   # print(ingredients_list)
@@ -172,7 +160,7 @@ finally:
   print("Data from the data variable: ", data)
 
   # Opens a binary file
-  my_recipes_file = open("all_recipes_list_and_ingredients.bin", 'wb')
+  my_recipes_file = open(recipe_file_name, 'wb')
 
   # Write data dictionary into the binary file
   pickle.dump(data, my_recipes_file)
