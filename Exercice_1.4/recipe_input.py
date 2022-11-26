@@ -71,8 +71,9 @@ def calc_difficulty(cooking_time, recipe_ingredients):
 # =========
 
 try:
+  recipe_file_name = input("Enter the name of the file that contains your recipe data (including the .bin extension): ")
   # Attempts to open a binary file in read mode
-  my_recipes_file = open("all_recipes_list_and_ingredients.bin", 'rb')
+  my_recipes_file = open(recipe_file_name, 'rb')
 
   # Loads the dictionary into data variable
   data = pickle.load(my_recipes_file)
