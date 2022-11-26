@@ -1,6 +1,6 @@
 # Python Task 4
 
-recipe_input.py is a simple script that will first as the user the name of a document that include recipes and ingredients.
+recipe_input.py is a simple script that will first ask the user the name of a document that includes recipes and ingredients.
 
 The script will then check if the corresponding binary file with recipes list and ingredients exists.
 
