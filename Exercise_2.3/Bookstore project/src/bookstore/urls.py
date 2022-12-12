@@ -21,11 +21,14 @@ from django.urls import include
 from django.conf import settings
 from django.conf.urls.static import static
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('sales.urls')),
-    path('books/', include('books.urls'))
+from .views import login_view, logout_view
 
+urlpatterns = [
+  path('admin/', admin.site.urls),
+  path('', include('sales.urls')),
+  path('books/', include('books.urls')),
+  path('login/', login_view, name='login'),
+	path('logout/', logout_view, name='logout'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
